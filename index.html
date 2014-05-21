@@ -1,56 +1,94 @@
-Hello World
-
-This is aDam's home page to show all his cool stuff off. coming soon etc blaa
-
 <!DOCTYPE html>
-
-<link rel='stylesheet' type='text/css' href='css/styles.css'>
-<link href="/normalize.css" rel="stylesheet">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adam Barrett</title>
+
+  <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
 
-  <a href="http://imgur.com/5UyIflY"><img src="http://i.imgur.com/5UyIflY.png" title="Hosted by imgur.com" /></a>
-  <p>Hi! I'm Adam, a DC-based Creative Technologist. Drop me a line!</p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
-  <ul>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#skills">SKILLS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
+  <!-- body content here -->
 
-  <section id="about">
-    <h2>ABOUT</h2>
-    <p>
-    Adam is a DC-based Creative Technologist. He enjoys finding creative, outside the box, solutions for front-end web applications.
-    </p>
-    <p>
-    Before beginning his quest to take over the world, Adam was the Technology Project Associate at the Center for Shared Services where he created web applications and served as a help desk analyst. He has extensive non-profit and start-up experience.
-    </p>
-    <p>
-    After realizing he wanted to be a full-time professional web developer, Adam began researching intensive web bootcamps. When Adam is not in front of his computer he can be found running on the National Mall, sending snapchats of his dog, or cooking bacon.
-    </p>
-  </section>
+  <!-- Navigation -->
 
-  <section id="skills">
-  <h2>SKILLS</h2>
+<!--
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <div class="fixed">
+    <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
 
-  </section>
+      <section class="middle tab-bar-section">
+        <h1 class="title">Adam Barrett</h1>
+      </section>
+    </nav>
+    </div>
 
-  <section id="contact">
-  <h2>CONTACT</h2>
-    <p align="center">
-    <a href="mailto:adampbarrett@gmail.com">adam.p.barrett@gmail.com</a>
-    </p>
-    <p align="center">(919) 889.2401</p>
-    <p align="center">
-    <a href="https://www.facebook.com/ab75173"><img src="http://i.imgur.com/gJ8y6Hl.png" title="Hosted by imgur.com" /></a>
-    <a href="http://instagram.com/ab75173"><img src="http://i.imgur.com/q6erFzz.png" title="Hosted by imgur.com" /></a>
-    <a href="https://twitter.com/adampbarrett"><img src="http://i.imgur.com/o01dGkR.png" title="Hosted by imgur.com" /></a>
-    <a href="https://www.linkedin.com/pub/adam-barrett/3a/96/43a"><img src="http://i.imgur.com/rP3lQYx.png" title="Hosted by imgur.com" /></a>
-    </p>
-  </section>
+    <aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label></label></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
+
+-->
+
+    <section class="main-section">
+      <!-- content goes here -->
+      <section class="intro">
+        <div class="row">
+          <div class="large-6 columns fullstack">
+            <h2>FULL STACK</h2>
+            <h3>Creative Technologist</h3>
+          </div>
+          <div class="large-6 columns"></div>
+        </div>
+      </section>
+
+      <section class="about">
+        <p>Adam is a DC-based Creative Technologist.  He enjoys finding creative, outside the box solutions for web applications.  He is currently enrolled in General Assembly's Web Development Immersive program.</p>
+        <p>Before beginning his quest to take over the world, Adam was the Technology Project Associate at the Center for Shared Services where he created web applications and managed the help desk internally, as well as for client organizaitons.  He has extensive non-profit and start-up experience.</p>
+        <p>After discovering he wanted to devote his full attention to web applications, Adam was determined to expanded his substantial skillset.  When Adam is not in front of his 'battle station' he can be found running on the National Mall, hiking with his dog, or cooking bacon.</p>
+      </section>
+
+      <section class="social">
+        <a href="https://www.facebook.com/ab75173"><img src="http://i.imgur.com/gJ8y6Hl.png" title="Hosted by imgur.com" /></a>
+        <a href="http://instagram.com/ab75173"><img src="http://i.imgur.com/q6erFzz.png" title="Hosted by imgur.com" /></a>
+        <a href="https://twitter.com/adampbarrett"><img src="http://i.imgur.com/o01dGkR.png" title="Hosted by imgur.com" /></a>
+        <a href="https://www.linkedin.com/pub/adam-barrett/3a/96/43a"><img src="http://i.imgur.com/rP3lQYx.png" title="Hosted by imgur.com" /></a>
+      </section>
+
+      <section class="footer">
+        Hosted with GitHub Pages and built on Foundation by Yours Truly &copy; 2014
+      </section>
+
+    </section>
+
+
+
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+<script src="js/vendor/modernizr.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
 </body>
+</html>

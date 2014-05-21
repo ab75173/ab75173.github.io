@@ -1,62 +1,75 @@
-body {
-      text-align: center;
-      background: url("http://dash.ga.co/assets/anna-bg.png");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      font-family: helvetica;
-    }
-    p {
-      font-size: 22px;
-      max-width: 600px;
-      margin: 10 auto;
-    }
-    input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
-    input[type="submit"] {
-      background: red;
-      color: white;
-    }
-    img {
-      border-radius: 300px;
-      border: 3px solid white;
-      margin: 40px 0px 0px 0px;
-    }
+.main-section {
+  background: url("http://dash.ga.co/assets/anna-bg.png");
+  background-size: cover;
+  background-position: center;
+}
 
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    }
-    a {
-      color: white;
-      text-decoration: none;
-      font-size: 22px;
-    }
-    section {
-      margin: 30px 0px;
-      padding: 100px;
-      background:white;
-      color: black;
-      text-align: left;
-    }
-    h2 {
-      text-align: center;
-    }
-    #skills {
-      background: rgba(0, 0, 0, 0);
-      color: white;
-    }
-    #about {
-      background: white;
-    }
-    #contact a {
-      color: black;
-    }
+.intro {
+  padding: 100px;
+  color: white;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, .5);
+  padding: 50px;
+  color: white;
+  font-family: 'Special Elite', cursive;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+.social {
+  text-align: center;
+  padding: 100px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  color: rgba(255, 255, 255, .5);
+}
+
+.fullstack h2 {
+  color: white;
+  font-family: impact;
+  font-size: 40px;
+}
+
+.fullstack h3 {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+}
+
+@media (max-width: 720px) {
+
+  body {
+    margin: 0 auto;
+  }
+
+.intro {
+  padding: 70px;
+}
+
+.fullstack h2 {
+  font-size: 20px;
+}
+
+.fullstack h3 {
+  font-size: 20px;
+}
+
+.about p {
+  font-size: 15px;
+}
+
+
+
+
+}
+
+
+
 
