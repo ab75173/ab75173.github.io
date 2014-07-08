@@ -9,60 +9,92 @@
   <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
 
 </head>
 <body>
 
   <!-- body content here -->
 
-  <!-- Navigation -->
+<!-- NAVIGATION -->
 
-<!--
-<div class="off-canvas-wrap" data-offcanvas>
-  <div class="inner-wrap">
-    <div class="fixed">
-    <nav class="tab-bar">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-      </section>
-
-      <section class="middle tab-bar-section">
-        <h1 class="title">Adam Barrett</h1>
-      </section>
-    </nav>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Adam Barrett</a>
     </div>
 
-    <aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label></label></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-    </aside>
 
--->
 
-    <section class="main-section">
-      <!-- content goes here -->
-      <section class="intro">
-        <div class="row">
-          <div class="large-6 columns fullstack">
-            <h2>FULL STACK</h2>
-            <h3>Creative Technologist</h3>
-          </div>
-          <div class="large-6 columns"></div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- INTRO SECTION -->
+
+<div class="intro-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="intro-message">
+          <h1>Adam Barrett</h1>
+            <h2>Full-Stack Creative Technologist</h2>
+              <hr class="intro-divider">
+                <ul class="list-inline intro-social-buttons">
+                  <li><a href="https://twitter.com/adampbarrett" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                  </li>
+                  <li><a href="https://github.com/ab75173" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                  </li>
+                  <li><a href="https://www.linkedin.com/pub/adam-barrett/3a/96/43a/" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                  </li>
+                </ul>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- /.container -->
+
+<a id="about" class="click-from-nav">
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-sm-6">
+          <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+              <h2 class="section-heading">About Me</h2>
+                    <p class="lead">Adam is a DC-based Creative Technologist.  He enjoys finding creative, outside the box solutions for web applications.  He is currently enrolled in General Assembly's Web Development Immersive program.
+                    </p>
+                    <p>Before beginning his quest to take over the world, Adam was the Technology Project Associate at the Center for Shared Services where he created web applications and managed the help desk internally, as well as for client organizaitons.  He has extensive non-profit and start-up experience.</p>
+                    <p>After discovering he wanted to devote his full attention to web applications, Adam was determined to expanded his substantial skillset.  When Adam is not in front of his 'battle station' he can be found running on the National Mall, hiking with his dog, or cooking bacon.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img id="ga-logo" class="img-responsive" src="img/ga.png" alt="">
+                    <img id="bc-logo" class="img-responsive" src="img/bc.png" alt="">
+                </div>
+            </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
 
-      <section class="about">
-        <p>Adam is a DC-based Creative Technologist.  He enjoys finding creative, outside the box solutions for web applications.  He is currently enrolled in General Assembly's Web Development Immersive program.</p>
-        <p>Before beginning his quest to take over the world, Adam was the Technology Project Associate at the Center for Shared Services where he created web applications and managed the help desk internally, as well as for client organizaitons.  He has extensive non-profit and start-up experience.</p>
-        <p>After discovering he wanted to devote his full attention to web applications, Adam was determined to expanded his substantial skillset.  When Adam is not in front of his 'battle station' he can be found running on the National Mall, hiking with his dog, or cooking bacon.</p>
-      </section>
+
 
       <section class="social">
         <a href="https://www.facebook.com/ab75173"><img src="http://i.imgur.com/gJ8y6Hl.png" title="Hosted by imgur.com" /></a>
@@ -84,11 +116,8 @@
   </div>
 </div>
 
-<script src="js/vendor/modernizr.js"></script>
-<script src="js/vendor/jquery.js"></script>
-<script src="js/foundation.min.js"></script>
-<script>
-  $(document).foundation();
-</script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
