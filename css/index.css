@@ -3,21 +3,37 @@
 }
 
 #resume {
-  border: 3px solid gray;
+  border: 3px solid #fffc00;
 }
 
 .intro-header {
+  display: block;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-color: rgba(255, 252, 0, .8);
+
+}
+
+.intro-header::after {
+  content: '';
   /*padding-top: 50px;  If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content!
   padding-bottom: 50px; */
   color: black;
-  text-align: center;
-  background-image: url('../img/adamresized.jpg');
+  //text-align: center;
+  background: url('../img/adamresized.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(10, 0, 200, .5);
-  font-weight: bold;
+  //font-weight: bold;
   font-size: 1.2em;
+  opacity: .7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .content-section-a {
@@ -64,11 +80,6 @@
   margin: 25% 0px 10% 0px;
 }
 
-.intro-message h1, .intro-message h2 {
-  color: white;
-  text-shadow: 3px 3px purple;
-}
-
 #ab-logo {
   width: 100%;
 }
@@ -77,6 +88,8 @@
   width: 100%;
 }
 
+/* NAVIVGATION */
+
 .navbar {
   padding: 20px;
   background-color: transparent;
@@ -84,31 +97,47 @@
 }
 
 .navbar-default .navbar-nav li a {
-  color: white;
+  color: black;
 }
 
 .navbar-default .navbar-brand {
-  color: white;
+  color: black;
+}
+
+/* RECENT ADDITIONS */
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+h1 {
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Varela Round', sans-serif;
+  text-align: left;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.btn-default, .btn-default:hover {
+  background-color: transparent;
+  border-color: black;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  opacity: .3;
 }
 
 
-.carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .0001) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .0001) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .1)), to(rgba(0, 0, 0, .0001)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .0001) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-  background-repeat: repeat-x;
-}
-.carousel-control.right {
-  right: 0;
-  left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .1) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .1) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .1)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat-x;
-}
+
 
 
