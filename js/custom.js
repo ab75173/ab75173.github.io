@@ -1,6 +1,6 @@
 /*COLUMN HEIGHT*/
-var cw = $('.col-sm-8').width();
-jQuery('.col-sm-8 .well').css({'height':cw+'px'});
+//var cw = $('.col-sm-8').width();
+//jQuery('.col-sm-8 .well').css({'height':cw+'px'});
 
 
 /*CANVAS JS*/
