@@ -1,3 +1,9 @@
+/*COLUMN HEIGHT*/
+var cw = $('.col-sm-8').width();
+jQuery('.col-sm-8').css({'height':cw+'px'});
+
+
+/*CANVAS JS*/
 var canvas = document.querySelector("canvas");
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
