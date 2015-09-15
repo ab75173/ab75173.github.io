@@ -113,7 +113,9 @@ h1 {
   text-transform: uppercase;
   font-weight: 900;
   font-family: 'Varela Round', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-align: left;
+  font-weight: bold;
 }
 
 h2 {
