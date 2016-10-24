@@ -107,7 +107,7 @@
 }
 
 .navbar-default .navbar-nav li a {
-  color: black;
+  color: white;
 }
 
 .navbar-default .navbar-brand {
@@ -117,6 +117,7 @@
 /* RECENT ADDITIONS */
 body {
   font-family: 'Lato', sans-serif;
+  border-top: 6px solid #fffc00;
 }
 h1 {
   font-size: 72px;
