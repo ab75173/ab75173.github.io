@@ -223,3 +223,11 @@ p.tech {
   color: white;
   text-align: center;
 }
+
+.btn-lg {
+    padding: 6% 6%;
+}
+.list-inline > li {
+  padding-right: 1%;
+  padding-left: 1%;
+}
