@@ -134,6 +134,9 @@ h1 {
 h2, h3 {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.well h2 {
   font-size: 24px;
 }
 
